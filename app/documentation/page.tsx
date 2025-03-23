@@ -15,6 +15,7 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import Navbar from "@/components/navbar"
 
 export default function Documentation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -22,87 +23,9 @@ export default function Documentation() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center justify-between border-b">
-        <Link className="flex items-center justify-center font-bold text-lg" href="/">
-          VectorDB
-        </Link>
+      <Navbar />
 
-        {/* Desktop Menu - Hidden on mobile */}
-        <nav className="hidden md:flex items-center gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#downloads">
-            Downloads
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#forum">
-            Forum
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4 text-primary" href="/documentation">
-            Documentation
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#license">
-            License
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#community">
-            Community
-          </Link>
-        </nav>
-
-        {/* Mobile Menu Button - Visible only on mobile */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(true)}>
-          <span className="sr-only">Open menu</span>
-          <div className="w-4 h-0.5 bg-current mb-1"></div>
-          <div className="w-4 h-0.5 bg-current mb-1"></div>
-          <div className="w-4 h-0.5 bg-current"></div>
-        </Button>
-
-        {/* Mobile Menu Sheet - Controlled by state */}
-        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-          <SheetContent side="right" className="w-[240px] sm:w-[300px]">
-            <SheetHeader className="mb-4">
-              <SheetTitle>VectorDB</SheetTitle>
-              <SheetDescription>Vector database for AI applications</SheetDescription>
-            </SheetHeader>
-            <nav className="flex flex-col gap-4">
-              <Link
-                className="text-sm font-medium hover:underline underline-offset-4"
-                href="/#downloads"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Downloads
-              </Link>
-              <Link
-                className="text-sm font-medium hover:underline underline-offset-4"
-                href="/#forum"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Forum
-              </Link>
-              <Link
-                className="text-sm font-medium hover:underline underline-offset-4 text-primary"
-                href="/documentation"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Documentation
-              </Link>
-              <Link
-                className="text-sm font-medium hover:underline underline-offset-4"
-                href="/#license"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                License
-              </Link>
-              <Link
-                className="text-sm font-medium hover:underline underline-offset-4"
-                href="/#community"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Community
-              </Link>
-            </nav>
-          </SheetContent>
-        </Sheet>
-      </header>
-
-      <div className="container px-4 md:px-6 py-8">
+      <div className="container mx-auto px-4 md:px-6 py-8">
         <Breadcrumb className="mb-6">
           <BreadcrumbList>
             <BreadcrumbItem>
