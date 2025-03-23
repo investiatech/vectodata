@@ -1,30 +1,110 @@
-import Link from "next/link"
-import { ArrowRight, Database, Globe, Search, Zap, Check } from "lucide-react"
+"use client"
 
+import Link from "next/link"
+import { useState } from "react"
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Input } from "@/components/ui/input"
+import { Badge } from "@/components/ui/badge"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+import { ArrowRight, Database, Globe, Search, Zap, Check } from "lucide-react"
 import Image from "next/image"
 
 export default function Home() {
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("")
+
   return (
     <div className="min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex justify-between items-center border-b">
-        <Link className="flex items-center justify-center" href="#">
-          <Database className="h-6 w-6 mr-2" />
-          <span className="font-bold">VectoBase</span>
+     <header className="px-4 lg:px-6 h-16 flex items-center justify-between border-b">
+        <Link className="flex items-center justify-center font-bold text-lg" href="/">
+          VectoBase
         </Link>
-        <nav className="flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
-            Features
+
+        {/* Desktop Menu - Hidden on mobile */}
+        <nav className="hidden md:flex items-center gap-6">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/download">
+            Downloads
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#how-it-works">
-            How It Works
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/forum">
+            Forum
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#use-cases">
-            Use Cases
+          <Link className="text-sm font-medium hover:underline underline-offset-4 text-primary" href="/documentation">
+            Documentation
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/license">
+            License
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/community">
+            Community
           </Link>
         </nav>
+
+        {/* Mobile Menu Button - Visible only on mobile */}
+        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(true)}>
+          <span className="sr-only">Open menu</span>
+          <div className="w-4 h-0.5 bg-current mb-1"></div>
+          <div className="w-4 h-0.5 bg-current mb-1"></div>
+          <div className="w-4 h-0.5 bg-current"></div>
+        </Button>
+
+        {/* Mobile Menu Sheet - Controlled by state */}
+        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+          <SheetContent side="right" className="w-[340px] sm:w-[360px]">
+            <SheetHeader className="mb-4">
+              <SheetTitle>VectoBase</SheetTitle>
+              <SheetDescription>Vector database for AI applications</SheetDescription>
+            </SheetHeader>
+            <nav className="flex flex-col gap-4 mx-4">
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="/#downloads"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Downloads
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="/#forum"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Forum
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4 text-primary"
+                href="/documentation"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Documentation
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="/#license"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                License
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="/#community"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Community
+              </Link>
+            </nav>
+          </SheetContent>
+        </Sheet>
       </header>
+
 
       <main className="mx-auto">
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -404,7 +484,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">FAQ</div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Frequently Asked Questions</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Everything you need to know about VectorDB and our services.
+                  Everything you need to know about VectoBase and our services.
                 </p>
               </div>
             </div>
@@ -469,7 +549,7 @@ export default function Home() {
                   Transform Your AI Applications Today
                 </h2>
                 <p className="text-primary-foreground/90 md:text-xl">
-                  Join thousands of companies using VectorDB to power their semantic search, recommendation systems, and
+                  Join thousands of companies using VectoBase to power their semantic search, recommendation systems, and
                   AI applications.
                 </p>
                 <ul className="space-y-2">
@@ -529,7 +609,7 @@ export default function Home() {
               <div className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
                 <h3 className="text-xl font-bold mb-4">Ready to get started?</h3>
                 <p className="mb-6 text-primary-foreground/90">
-                  Create your account in minutes and start building with VectorDB today.
+                  Create your account in minutes and start building with VectoBase today.
                 </p>
                 <div className="space-y-3">
                   <Button className="w-full bg-white text-primary hover:bg-white/90">Sign Up Free</Button>
@@ -552,7 +632,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Connect With Us</div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Stay Updated with VectorDB</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Stay Updated with VectoBase</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Subscribe to our newsletter for the latest updates, tutorials, and insights about vector databases and
                   AI.
