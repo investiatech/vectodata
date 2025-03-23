@@ -26,7 +26,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="mx-auto">ls
+      <main className="mx-auto">
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <Image
             src="/images/ai.png"

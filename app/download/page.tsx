@@ -33,7 +33,7 @@ export default function Home() {
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
                                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Docker Images</div>
-                                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">VectorDB Docker Images</h2>
+                                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">VectoBase Docker Images</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                     Ready-to-use Docker containers for quick deployment and scaling of your vector database.
                                 </p>
@@ -46,18 +46,15 @@ export default function Home() {
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
-                                            <div className="bg-primary/10 p-2 rounded-md">
-                                                <DockIcon className="h-8 w-8 text-primary" />
-                                            </div>
                                             <span className="font-bold text-lg">Server Image</span>
                                         </div>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
                                     </div>
-                                    <CardDescription>Core VectorDB server with all database functionality</CardDescription>
+                                    <CardDescription>Core VectoBase server with all database functionality</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>docker pull vectordb/server:latest</code>
+                                        <code>docker pull VectoBase/server:latest</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         Optimized for production environments with high-performance vector search capabilities.
@@ -84,18 +81,15 @@ export default function Home() {
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
-                                            <div className="bg-primary/10 p-2 rounded-md">
-                                                <Code className="h-8 w-8 text-primary" />
-                                            </div>
                                             <span className="font-bold text-lg">Client Tools</span>
                                         </div>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.0</span>
                                     </div>
-                                    <CardDescription>Client utilities and tools for interacting with VectorDB</CardDescription>
+                                    <CardDescription>Client utilities and tools for interacting with VectoBase</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>docker pull vectordb/client:latest</code>
+                                        <code>docker pull VectoBase/client:latest</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         Includes CLI tools, data import/export utilities, and monitoring dashboards.
@@ -122,18 +116,15 @@ export default function Home() {
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
-                                            <div className="bg-primary/10 p-2 rounded-md">
-                                                <Box className="h-8 w-8 text-primary" />
-                                            </div>
                                             <span className="font-bold text-lg">Full Stack</span>
                                         </div>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
                                     </div>
-                                    <CardDescription>Complete VectorDB environment with server, client, and UI</CardDescription>
+                                    <CardDescription>Complete VectoBase environment with server, client, and UI</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>docker pull vectordb/full:latest</code>
+                                        <code>docker pull VectoBase/full:latest</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         All-in-one solution for development and testing with web-based admin interface.
@@ -160,18 +151,15 @@ export default function Home() {
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
-                                            <div className="bg-primary/10 p-2 rounded-md">
-                                                <HardDrive className="h-8 w-8 text-primary" />
-                                            </div>
                                             <span className="font-bold text-lg">Slim Image</span>
                                         </div>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
                                     </div>
-                                    <CardDescription>Minimalist VectorDB server for resource-constrained environments</CardDescription>
+                                    <CardDescription>Minimalist VectoBase server for resource-constrained environments</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>docker pull vectordb/slim:latest</code>
+                                        <code>docker pull VectoBase/slim:latest</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         Optimized for edge devices and environments with limited resources.
@@ -198,18 +186,15 @@ export default function Home() {
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
-                                            <div className="bg-primary/10 p-2 rounded-md">
-                                                <Cpu className="h-8 w-8 text-primary" />
-                                            </div>
                                             <span className="font-bold text-lg">GPU Accelerated</span>
                                         </div>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.0</span>
                                     </div>
-                                    <CardDescription>CUDA-enabled VectorDB server for high-performance computing</CardDescription>
+                                    <CardDescription>CUDA-enabled VectoBase server for high-performance computing</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>docker pull vectordb/gpu:latest</code>
+                                        <code>docker pull VectoBase/gpu:latest</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         Optimized for NVIDIA GPUs with CUDA support for ultra-fast vector operations.
@@ -237,9 +222,6 @@ export default function Home() {
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
-                                            <div className="bg-primary/10 p-2 rounded-md">
-                                                <Github className="h-8 w-8 text-primary" />
-                                            </div>
                                             <span className="font-bold text-lg">Development</span>
                                         </div>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">nightly</span>
@@ -248,7 +230,7 @@ export default function Home() {
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>docker pull vectordb/dev:nightly</code>
+                                        <code>docker pull VectoBase/dev:nightly</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         Complete development environment with source code, dependencies, and build tools.
@@ -282,25 +264,25 @@ export default function Home() {
                                 <div className="bg-muted p-4 rounded-md font-mono text-sm overflow-x-auto">
                                     <pre>{`version: '3'
     services:
-    vectordb:
-        image: vectordb/server:latest
+    VectoBase:
+        image: VectoBase/server:latest
         ports:
         - "8080:8080"
         volumes:
-        - vectordb-data:/data
+        - VectoBase-data:/data
         environment:
-        - VECTORDB_MEMORY=4G
-        - VECTORDB_THREADS=4
+        - VectoBase_MEMORY=4G
+        - VectoBase_THREADS=4
         
-    vectordb-ui:
-        image: vectordb/client:latest
+    VectoBase-ui:
+        image: VectoBase/client:latest
         ports:
         - "3000:3000"
         environment:
-        - VECTORDB_SERVER=vectordb:8080
+        - VectoBase_SERVER=VectoBase:8080
 
     volumes:
-    vectordb-data:`}</pre>
+    VectoBase-data:`}</pre>
                                 </div>
                                 <div className="mt-4 flex justify-end">
                                     <Button variant="outline" size="sm">
@@ -317,48 +299,102 @@ export default function Home() {
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
                                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Downloads</div>
-                                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                                    Get Started with VectoBase
-                                </h2>
+                                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Download VectoBase</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    Download our client libraries and tools to integrate VectorDB into your applications.
+                                    Get started with our high-performance vector database for AI applications.
                                 </p>
                             </div>
                         </div>
 
                         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
-                            {/* Python SDK */}
+                            {/* Server Package */}
                             <Card className="flex flex-col">
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
-                                        <div className="flex items-center space-x-2">
-                                            <svg viewBox="0 0 24 24" className="h-8 w-8 text-primary" fill="currentColor">
-                                                <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
-                                            </svg>
-                                            <span className="font-bold text-lg">Python SDK</span>
-                                        </div>
+                                        <span className="font-bold text-lg">Server Package</span>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
                                     </div>
-                                    <CardDescription>
-                                        Our official Python client library with full API support
-                                    </CardDescription>
+                                    <CardDescription>Core VectoBase server with all database functionality</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>pip install vectordb-python</code>
+                                        <code>wget https://downloads.VectoBase.com/server-2.4.1.tar.gz</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
-                                        Includes comprehensive documentation, examples, and type hints for a seamless development experience.
+                                        Optimized for production environments with high-performance vector search capabilities.
                                     </p>
                                     <div className="text-xs text-muted-foreground">
                                         <p>Released: March 15, 2025</p>
-                                        <p>Size: 2.4 MB</p>
+                                        <p>Size: 245 MB</p>
+                                        <p>Platforms: Linux, macOS, Windows</p>
                                     </div>
                                 </CardContent>
-                                <CardFooter>
-                                    <Button className="w-full">
-                                        Download
-                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                <CardFooter className="flex flex-col space-y-2">
+                                    <Button className="w-full">Download</Button>
+                                    <Button variant="outline" className="w-full">
+                                        Documentation
+                                    </Button>
+                                </CardFooter>
+                            </Card>
+
+                            {/* Client Tools */}
+                            <Card className="flex flex-col">
+                                <CardHeader>
+                                    <div className="flex items-center justify-between">
+                                        <span className="font-bold text-lg">Client Tools</span>
+                                        <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.0</span>
+                                    </div>
+                                    <CardDescription>Client utilities and tools for interacting with VectoBase</CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex-1">
+                                    <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
+                                        <code>wget https://downloads.VectoBase.com/client-2.4.0.tar.gz</code>
+                                    </div>
+                                    <p className="text-sm text-muted-foreground mb-4">
+                                        Includes CLI tools, data import/export utilities, and monitoring dashboards.
+                                    </p>
+                                    <div className="text-xs text-muted-foreground">
+                                        <p>Released: March 10, 2025</p>
+                                        <p>Size: 120 MB</p>
+                                        <p>Platforms: Linux, macOS, Windows</p>
+                                    </div>
+                                </CardContent>
+                                <CardFooter className="flex flex-col space-y-2">
+                                    <Button className="w-full">Download</Button>
+                                    <Button variant="outline" className="w-full">
+                                        Documentation
+                                    </Button>
+                                </CardFooter>
+                            </Card>
+
+                            {/* Docker Image */}
+                            <Card className="flex flex-col border-primary">
+                                <CardHeader className="bg-primary/5 rounded-t-lg">
+                                    <div className="flex items-center justify-between">
+                                        <span className="font-bold text-lg">Docker Image</span>
+                                        <span className="text-xs bg-primary text-primary-foreground px-2 py-1 rounded-full">
+                                            Recommended
+                                        </span>
+                                    </div>
+                                    <CardDescription>Official Docker image for easy deployment</CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex-1">
+                                    <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
+                                        <code>docker pull VectoBase/server:latest</code>
+                                    </div>
+                                    <p className="text-sm text-muted-foreground mb-4">
+                                        The easiest way to get started with VectoBase. Includes all dependencies and configuration.
+                                    </p>
+                                    <div className="text-xs text-muted-foreground">
+                                        <p>Updated: March 15, 2025</p>
+                                        <p>Size: 245 MB</p>
+                                        <p>Platforms: Any Docker-compatible system</p>
+                                    </div>
+                                </CardContent>
+                                <CardFooter className="flex flex-col space-y-2">
+                                    <Button className="w-full">Docker Hub</Button>
+                                    <Button variant="outline" className="w-full">
+                                        Documentation
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -367,77 +403,94 @@ export default function Home() {
                             <Card className="flex flex-col">
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
-                                        <div className="flex items-center space-x-2">
-                                            <svg viewBox="0 0 24 24" className="h-8 w-8 text-primary" fill="currentColor">
-                                                <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
-                                            </svg>
-                                            <span className="font-bold text-lg">Python SDK</span>
-                                        </div>
+                                        <span className="font-bold text-lg">Python SDK</span>
                                         <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
                                     </div>
-                                    <CardDescription>
-                                        Our official Python client library with full API support
-                                    </CardDescription>
+                                    <CardDescription>Python client library for VectoBase</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>pip install vectordb-python</code>
+                                        <code>pip install VectoBase</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
-                                        Includes comprehensive documentation, examples, and type hints for a seamless development experience.
+                                        Comprehensive Python SDK with full API support and examples.
                                     </p>
                                     <div className="text-xs text-muted-foreground">
                                         <p>Released: March 15, 2025</p>
                                         <p>Size: 2.4 MB</p>
+                                        <p>Requirements: Python 3.8+</p>
                                     </div>
                                 </CardContent>
-                                <CardFooter>
-                                    <Button className="w-full">
-                                        Download
-                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                <CardFooter className="flex flex-col space-y-2">
+                                    <Button className="w-full">PyPI</Button>
+                                    <Button variant="outline" className="w-full">
+                                        Documentation
                                     </Button>
                                 </CardFooter>
                             </Card>
 
-                            {/* Python SDK */}
+                            {/* JavaScript SDK */}
                             <Card className="flex flex-col">
                                 <CardHeader>
                                     <div className="flex items-center justify-between">
-                                        <div className="flex items-center space-x-2">
-                                            <svg viewBox="0 0 24 24" className="h-8 w-8 text-primary" fill="currentColor">
-                                                <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
-                                            </svg>
-                                            <span className="font-bold text-lg">Python SDK</span>
-                                        </div>
-                                        <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
+                                        <span className="font-bold text-lg">JavaScript SDK</span>
+                                        <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.3.0</span>
                                     </div>
-                                    <CardDescription>
-                                        Our official Python client library with full API support
-                                    </CardDescription>
+                                    <CardDescription>JavaScript/TypeScript client for VectoBase</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-1">
                                     <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
-                                        <code>pip install vectordb-python</code>
+                                        <code>npm install VectoBase-js</code>
                                     </div>
                                     <p className="text-sm text-muted-foreground mb-4">
-                                        Includes comprehensive documentation, examples, and type hints for a seamless development experience.
+                                        JavaScript client with TypeScript definitions for browser and Node.js.
                                     </p>
                                     <div className="text-xs text-muted-foreground">
-                                        <p>Released: March 15, 2025</p>
-                                        <p>Size: 2.4 MB</p>
+                                        <p>Released: March 1, 2025</p>
+                                        <p>Size: 1.2 MB</p>
+                                        <p>Requirements: Node.js 18+ or modern browsers</p>
                                     </div>
                                 </CardContent>
-                                <CardFooter>
-                                    <Button className="w-full">
-                                        Download
-                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                <CardFooter className="flex flex-col space-y-2">
+                                    <Button className="w-full">NPM</Button>
+                                    <Button variant="outline" className="w-full">
+                                        Documentation
+                                    </Button>
+                                </CardFooter>
+                            </Card>
+
+                            {/* Source Code */}
+                            <Card className="flex flex-col">
+                                <CardHeader>
+                                    <div className="flex items-center justify-between">
+                                        <span className="font-bold text-lg">Source Code</span>
+                                        <span className="text-xs bg-muted px-2 py-1 rounded-full">v2.4.1</span>
+                                    </div>
+                                    <CardDescription>VectoBase source code for custom builds</CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex-1">
+                                    <div className="bg-muted p-3 rounded-md font-mono text-sm mb-4 overflow-x-auto">
+                                        <code>git clone https://github.com/VectoBase/VectoBase.git</code>
+                                    </div>
+                                    <p className="text-sm text-muted-foreground mb-4">
+                                        Full source code for custom builds and modifications.
+                                    </p>
+                                    <div className="text-xs text-muted-foreground">
+                                        <p>Updated: March 15, 2025</p>
+                                        <p>License: Apache 2.0</p>
+                                        <p>Build Requirements: C++17 compiler, CMake 3.15+</p>
+                                    </div>
+                                </CardContent>
+                                <CardFooter className="flex flex-col space-y-2">
+                                    <Button className="w-full">GitHub</Button>
+                                    <Button variant="outline" className="w-full">
+                                        Build Instructions
                                     </Button>
                                 </CardFooter>
                             </Card>
                         </div>
                     </div>
                 </section>
-
             </main>
 
             <footer id="footer" className="w-full py-12 md:py-24 lg:py-32 bg-background">
@@ -446,7 +499,7 @@ export default function Home() {
                         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                             <div className="space-y-2">
                                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Connect With Us</div>
-                                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Stay Updated with VectorDB</h2>
+                                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Stay Updated with VectoBase</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                     Subscribe to our newsletter for the latest updates, tutorials, and insights about vector databases and
                                     AI.
