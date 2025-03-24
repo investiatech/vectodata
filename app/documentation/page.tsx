@@ -223,7 +223,7 @@ export default function Documentation() {
               <div>
                 <h1 className="text-3xl font-bold mb-4">Documentation</h1>
                 <p className="text-muted-foreground mb-6">
-                  Comprehensive guides, tutorials, and API references to help you get the most out of VectorDB.
+                  Comprehensive guides, tutorials, and API references to help you get the most out of VectoBase.
                 </p>
                 <div className="relative">
                   <Input
@@ -255,7 +255,7 @@ export default function Documentation() {
                           <CardTitle>Installation Guide</CardTitle>
                           <Badge>Essential</Badge>
                         </div>
-                        <CardDescription>Learn how to install VectorDB on different platforms</CardDescription>
+                        <CardDescription>Learn how to install VectoBase on different platforms</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -298,11 +298,11 @@ export default function Documentation() {
                           <CardTitle>Quick Start</CardTitle>
                           <Badge>Essential</Badge>
                         </div>
-                        <CardDescription>Get up and running with VectorDB in minutes</CardDescription>
+                        <CardDescription>Get up and running with VectoBase in minutes</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
-                          A quick introduction to VectorDB with examples to get you started immediately.
+                          A quick introduction to VectoBase with examples to get you started immediately.
                         </p>
                         <div className="space-y-2">
                           <div className="flex items-center">
@@ -378,7 +378,7 @@ export default function Documentation() {
                     <Card id="configuration">
                       <CardHeader>
                         <CardTitle>Configuration</CardTitle>
-                        <CardDescription>Configure VectorDB for your specific needs</CardDescription>
+                        <CardDescription>Configure VectoBase for your specific needs</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -418,11 +418,11 @@ export default function Documentation() {
                     <Card id="performance">
                       <CardHeader>
                         <CardTitle>Performance Tuning</CardTitle>
-                        <CardDescription>Optimize VectorDB for maximum performance</CardDescription>
+                        <CardDescription>Optimize VectoBase for maximum performance</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
-                          Learn how to tune VectorDB for optimal performance with large datasets.
+                          Learn how to tune VectoBase for optimal performance with large datasets.
                         </p>
                         <div className="space-y-2">
                           <div className="flex items-center">
@@ -458,11 +458,11 @@ export default function Documentation() {
                     <Card id="deployment">
                       <CardHeader>
                         <CardTitle>Deployment</CardTitle>
-                        <CardDescription>Deploy VectorDB in production environments</CardDescription>
+                        <CardDescription>Deploy VectoBase in production environments</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
-                          Best practices for deploying VectorDB in production environments.
+                          Best practices for deploying VectoBase in production environments.
                         </p>
                         <div className="space-y-2">
                           <div className="flex items-center">
@@ -503,7 +503,7 @@ export default function Documentation() {
                     <Card id="rest-api">
                       <CardHeader>
                         <CardTitle>REST API</CardTitle>
-                        <CardDescription>Complete reference for the VectorDB REST API</CardDescription>
+                        <CardDescription>Complete reference for the VectoBase REST API</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -543,7 +543,7 @@ export default function Documentation() {
                     <Card id="python-sdk">
                       <CardHeader>
                         <CardTitle>Python SDK</CardTitle>
-                        <CardDescription>Python client library for VectorDB</CardDescription>
+                        <CardDescription>Python client library for VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -583,7 +583,7 @@ export default function Documentation() {
                     <Card id="javascript-sdk">
                       <CardHeader>
                         <CardTitle>JavaScript SDK</CardTitle>
-                        <CardDescription>JavaScript/TypeScript client for VectorDB</CardDescription>
+                        <CardDescription>JavaScript/TypeScript client for VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -623,7 +623,7 @@ export default function Documentation() {
                     <Card id="go-sdk">
                       <CardHeader>
                         <CardTitle>Go SDK</CardTitle>
-                        <CardDescription>Go client library for VectorDB</CardDescription>
+                        <CardDescription>Go client library for VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -663,7 +663,7 @@ export default function Documentation() {
                     <Card id="java-sdk">
                       <CardHeader>
                         <CardTitle>Java SDK</CardTitle>
-                        <CardDescription>Java client library for VectorDB</CardDescription>
+                        <CardDescription>Java client library for VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -708,11 +708,11 @@ export default function Documentation() {
                     <Card id="semantic-search">
                       <CardHeader>
                         <CardTitle>Building a Semantic Search Engine</CardTitle>
-                        <CardDescription>Create a powerful semantic search engine with VectorDB</CardDescription>
+                        <CardDescription>Create a powerful semantic search engine with VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
-                          Learn how to build a semantic search engine for text documents using VectorDB.
+                          Learn how to build a semantic search engine for text documents using VectoBase.
                         </p>
                         <div className="space-y-2">
                           <div className="flex items-center">
@@ -788,11 +788,11 @@ export default function Documentation() {
                     <Card id="image-search">
                       <CardHeader>
                         <CardTitle>Image Similarity Search</CardTitle>
-                        <CardDescription>Build an image search engine with VectorDB</CardDescription>
+                        <CardDescription>Build an image search engine with VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
-                          Learn how to create an image similarity search system using VectorDB.
+                          Learn how to create an image similarity search system using VectoBase.
                         </p>
                         <div className="space-y-2">
                           <div className="flex items-center">
@@ -828,7 +828,7 @@ export default function Documentation() {
                     <Card id="clustering">
                       <CardHeader>
                         <CardTitle>Vector Clustering</CardTitle>
-                        <CardDescription>Implement clustering algorithms with VectorDB</CardDescription>
+                        <CardDescription>Implement clustering algorithms with VectoBase</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground mb-4">
@@ -881,10 +881,10 @@ export default function Documentation() {
                           <div className="p-4 rounded-lg border">
                             <h3 className="font-medium mb-2">Python: Basic Vector Search</h3>
                             <div className="bg-muted p-3 rounded-md font-mono text-xs overflow-x-auto">
-                              <pre>{`import vectordb
+                              <pre>{`import VectoBase
 
-# Connect to VectorDB
-client = vectordb.Client("localhost:8080")
+# Connect to VectoBase
+client = VectoBase.Client("localhost:8080")
 
 # Create an index
 index = client.create_index(
@@ -920,10 +920,10 @@ for result in results:
                           <div className="p-4 rounded-lg border">
                             <h3 className="font-medium mb-2">JavaScript: Basic Vector Search</h3>
                             <div className="bg-muted p-3 rounded-md font-mono text-xs overflow-x-auto">
-                              <pre>{`import { VectorDBClient } from 'vectordb-js';
+                              <pre>{`import { VectoBaseClient } from 'VectoBase-js';
 
-// Connect to VectorDB
-const client = new VectorDBClient('http://localhost:8080');
+// Connect to VectoBase
+const client = new VectoBaseClient('http://localhost:8080');
 
 // Create an index
 const index = await client.createIndex({
@@ -1009,18 +1009,18 @@ curl -X POST "http://localhost:8080/indexes/products/search" \\
 
 import (
 	"fmt"
-	"github.com/vectordb/client-go"
+	"github.com/VectoBase/client-go"
 )
 
 func main() {
-	// Connect to VectorDB
-	client, err := vectordb.NewClient("localhost:8080")
+	// Connect to VectoBase
+	client, err := VectoBase.NewClient("localhost:8080")
 	if err != nil {
 		panic(err)
 	}
 
 	// Create an index
-	index, err := client.CreateIndex(vectordb.IndexConfig{
+	index, err := client.CreateIndex(VectoBase.IndexConfig{
 		Name:      "products",
 		Dimension: 128,
 		Metric:    "cosine",
@@ -1030,7 +1030,7 @@ func main() {
 	}
 
 	// Add vectors
-	vectors := []vectordb.Vector{
+	vectors := []VectoBase.Vector{
 		{
 			ID:     "1",
 			Vector: []float32{0.1, 0.2, ...},
@@ -1053,7 +1053,7 @@ func main() {
 
 	// Search vectors
 	queryVector := []float32{0.2, 0.3, ...}
-	results, err := index.Search(vectordb.SearchConfig{
+	results, err := index.Search(VectoBase.SearchConfig{
 		Vector: queryVector,
 		Limit:  10,
 	})
@@ -1085,21 +1085,21 @@ func main() {
                     <Card>
                       <CardHeader>
                         <CardTitle>Sample Projects</CardTitle>
-                        <CardDescription>Complete projects showcasing VectorDB capabilities</CardDescription>
+                        <CardDescription>Complete projects showcasing VectoBase capabilities</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           <div className="p-4 rounded-lg border">
                             <h3 className="font-medium mb-2">Document Search Engine</h3>
                             <p className="text-sm text-muted-foreground mb-4">
-                              A complete semantic search engine for documents using VectorDB and Python.
+                              A complete semantic search engine for documents using VectoBase and Python.
                             </p>
                             <div className="flex items-center text-xs text-muted-foreground mb-4">
                               <span>Python</span>
                               <span className="mx-2">•</span>
                               <span>Flask</span>
                               <span className="mx-2">•</span>
-                              <span>VectorDB</span>
+                              <span>VectoBase</span>
                             </div>
                             <Button variant="outline" size="sm" className="w-full">
                               View Project
@@ -1109,14 +1109,14 @@ func main() {
                           <div className="p-4 rounded-lg border">
                             <h3 className="font-medium mb-2">Product Recommender</h3>
                             <p className="text-sm text-muted-foreground mb-4">
-                              An e-commerce product recommendation system using VectorDB.
+                              An e-commerce product recommendation system using VectoBase.
                             </p>
                             <div className="flex items-center text-xs text-muted-foreground mb-4">
                               <span>JavaScript</span>
                               <span className="mx-2">•</span>
                               <span>Node.js</span>
                               <span className="mx-2">•</span>
-                              <span>VectorDB</span>
+                              <span>VectoBase</span>
                             </div>
                             <Button variant="outline" size="sm" className="w-full">
                               View Project
@@ -1126,14 +1126,14 @@ func main() {
                           <div className="p-4 rounded-lg border">
                             <h3 className="font-medium mb-2">Image Search</h3>
                             <p className="text-sm text-muted-foreground mb-4">
-                              A visual search application for finding similar images using VectorDB.
+                              A visual search application for finding similar images using VectoBase.
                             </p>
                             <div className="flex items-center text-xs text-muted-foreground mb-4">
                               <span>Python</span>
                               <span className="mx-2">•</span>
                               <span>FastAPI</span>
                               <span className="mx-2">•</span>
-                              <span>VectorDB</span>
+                              <span>VectoBase</span>
                             </div>
                             <Button variant="outline" size="sm" className="w-full">
                               View Project
@@ -1161,13 +1161,13 @@ func main() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Watch step-by-step video tutorials on using VectorDB.
+                        Watch step-by-step video tutorials on using VectoBase.
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-center">
                           <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></div>
                           <Link href="#" className="text-sm hover:underline">
-                            Getting Started with VectorDB
+                            Getting Started with VectoBase
                           </Link>
                         </li>
                         <li className="flex items-center">
@@ -1197,19 +1197,19 @@ func main() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Join our webinars to learn from VectorDB experts.
+                        Join our webinars to learn from VectoBase experts.
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-center">
                           <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></div>
                           <Link href="#" className="text-sm hover:underline">
-                            Scaling VectorDB to Billions of Vectors
+                            Scaling VectoBase to Billions of Vectors
                           </Link>
                         </li>
                         <li className="flex items-center">
                           <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></div>
                           <Link href="#" className="text-sm hover:underline">
-                            AI Applications with VectorDB
+                            AI Applications with VectoBase
                           </Link>
                         </li>
                         <li className="flex items-center">
@@ -1232,7 +1232,7 @@ func main() {
                       <CardTitle>Community Resources</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground mb-4">Resources created by the VectorDB community.</p>
+                      <p className="text-sm text-muted-foreground mb-4">Resources created by the VectoBase community.</p>
                       <ul className="space-y-2">
                         <li className="flex items-center">
                           <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></div>
@@ -1269,7 +1269,7 @@ func main() {
 
       <footer className="border-t py-6 md:py-8 mt-12">
         <div className="container flex flex-col items-center justify-center gap-4 md:gap-6 text-center">
-          <p className="text-sm leading-loose text-muted-foreground">© 2025 VectorDB. All rights reserved.</p>
+          <p className="text-sm leading-loose text-muted-foreground">© 2025 VectoBase. All rights reserved.</p>
         </div>
       </footer>
     </div>

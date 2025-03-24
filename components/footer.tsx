@@ -172,13 +172,13 @@ export default function Footer() {
               <div className="flex flex-col sm:flex-row justify-between items-center">
                 <p className="text-sm text-muted-foreground">© 2025 Investia.Tech. All rights reserved.</p>
                 <div className="flex gap-4 mt-4 sm:mt-0">
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
                     Terms of Service
                   </Link>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
                     Privacy Policy
                   </Link>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/cookie" className="text-sm text-muted-foreground hover:text-foreground">
                     Cookie Policy
                   </Link>
                 </div>

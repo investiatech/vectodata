@@ -5,6 +5,7 @@ import { useState } from "react"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from 'lucide-react';
+import { Span } from "next/dist/trace"
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,9 +21,12 @@ export default function Navbar() {
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="/downloads">
           Downloads
         </Link>
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="/forum">
+        {/* <Link className="text-sm font-medium hover:underline underline-offset-4" href="/forum">
           Forum
-        </Link>
+        </Link> */}
+        <span className="text-sm font-medium text-gray-400">
+          Forum
+        </span>
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="/documentation">
           Documentation
         </Link>
@@ -60,18 +64,19 @@ export default function Navbar() {
           <nav className="flex flex-col gap-4 mx-4">
             <Link
               className="text-sm font-medium hover:underline underline-offset-4"
-              href="/#downloads"
+              href="/downloads"
               onClick={() => setMobileMenuOpen(false)}
             >
               Downloads
             </Link>
-            <Link
+            {/* <Link
               className="text-sm font-medium hover:underline underline-offset-4"
               href="/forum"
               onClick={() => setMobileMenuOpen(false)}
             >
               Forum
-            </Link>
+            </Link> */}
+            <span className="text-sm font-medium hover:underline underline-offset-4">Forum</span>
             <Link
               className="text-sm font-medium hover:underline underline-offset-4"
               href="/documentation"

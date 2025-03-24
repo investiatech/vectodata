@@ -46,9 +46,9 @@ export default function ForumPage() {
                     {/* Forum Header */}
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                         <div>
-                            <h1 className="text-2xl font-bold mb-1">VectorDB Community Forum</h1>
+                            <h1 className="text-2xl font-bold mb-1">VectoBase Community Forum</h1>
                             <p className="text-sm text-muted-foreground">
-                                Connect with other VectorDB users, share your experiences, and get help from the community.
+                                Connect with other VectoBase users, share your experiences, and get help from the community.
                             </p>
                         </div>
                         <div className="flex gap-2">
@@ -282,12 +282,12 @@ export default function ForumPage() {
                                                 <div className="flex-1 space-y-1">
                                                     <div className="flex items-center justify-between">
                                                         <Link href="/forum/topic/2" className="font-medium hover:underline">
-                                                            Announcing VectorDB 2.4.1 release
+                                                            Announcing VectoBase 2.4.1 release
                                                         </Link>
                                                         <Badge variant="outline">Announcements</Badge>
                                                     </div>
                                                     <p className="text-sm text-muted-foreground line-clamp-2">
-                                                        We're excited to announce the release of VectorDB 2.4.1 with improved performance, new
+                                                        We're excited to announce the release of VectoBase 2.4.1 with improved performance, new
                                                         features, and bug fixes.
                                                     </p>
                                                     <div className="flex items-center text-xs text-muted-foreground">
@@ -344,12 +344,12 @@ export default function ForumPage() {
                                                 <div className="flex-1 space-y-1">
                                                     <div className="flex items-center justify-between">
                                                         <Link href="/forum/topic/4" className="font-medium hover:underline">
-                                                            Building a semantic search engine with VectorDB
+                                                            Building a semantic search engine with VectoBase
                                                         </Link>
                                                         <Badge variant="outline">Showcase</Badge>
                                                     </div>
                                                     <p className="text-sm text-muted-foreground line-clamp-2">
-                                                        I've built a semantic search engine for my company's documentation using VectorDB. Here's
+                                                        I've built a semantic search engine for my company's documentation using VectoBase. Here's
                                                         how I did it and some lessons learned.
                                                     </p>
                                                     <div className="flex items-center text-xs text-muted-foreground">
@@ -411,7 +411,7 @@ export default function ForumPage() {
                                                         <Badge variant="outline">Feature Requests</Badge>
                                                     </div>
                                                     <p className="text-sm text-muted-foreground line-clamp-2">
-                                                        It would be great if VectorDB supported custom distance metrics beyond the standard
+                                                        It would be great if VectoBase supported custom distance metrics beyond the standard
                                                         Euclidean, cosine, and dot product options.
                                                     </p>
                                                     <div className="flex items-center text-xs text-muted-foreground">
@@ -447,8 +447,8 @@ export default function ForumPage() {
                             <div className="text-center">
                                 <h3 className="text-xl font-bold mb-2">Join Our Community Today</h3>
                                 <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
-                                    Get help, share your knowledge, and connect with other VectorDB users. Sign up to participate in
-                                    discussions and get the most out of VectorDB.
+                                    Get help, share your knowledge, and connect with other VectoBase users. Sign up to participate in
+                                    discussions and get the most out of VectoBase.
                                 </p>
                                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                                     <Link href="/register">
