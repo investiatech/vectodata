@@ -4,7 +4,7 @@ import { ArrowRight, Database, Globe, Search, Zap, Check } from "lucide-react"
 
 export default function Footer() {
     return (
-        <footer id="footer" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <footer id="footer" className="w-full py-12 md:py-24 lg:py-32 bg-background border-t">
         <div className="container mx-auto px-4 md:px-6">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
