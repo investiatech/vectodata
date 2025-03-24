@@ -21,12 +21,6 @@ export default function Navbar() {
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="/downloads">
           Downloads
         </Link>
-        {/* <Link className="text-sm font-medium hover:underline underline-offset-4" href="/forum">
-          Forum
-        </Link> */}
-        <span className="text-sm font-medium text-gray-400">
-          Forum
-        </span>
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="/documentation">
           Documentation
         </Link>
@@ -69,14 +63,6 @@ export default function Navbar() {
             >
               Downloads
             </Link>
-            {/* <Link
-              className="text-sm font-medium hover:underline underline-offset-4"
-              href="/forum"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Forum
-            </Link> */}
-            <span className="text-sm font-medium hover:underline underline-offset-4">Forum</span>
             <Link
               className="text-sm font-medium hover:underline underline-offset-4"
               href="/documentation"
